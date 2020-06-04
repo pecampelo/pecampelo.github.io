@@ -8,3 +8,7 @@ body {
   text-align:center;
   font-family: Lucida;
 }
+
+nav {
+  font-size: 20px;
+}
