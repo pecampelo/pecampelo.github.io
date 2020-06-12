@@ -14,14 +14,16 @@ body {
 }
 
 header {
+  width: auto;
+  height: auto;
   border: 1px hidden color;
   padding: 10px;
   margin: 0 auto;
 }
 
-nav {
+nav ul {
   font-size: 20px;
-  font-family: Arial;
+  font-family: Helvetica;
 }
 
 main {
