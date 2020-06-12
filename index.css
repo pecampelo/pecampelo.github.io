@@ -14,16 +14,17 @@ body {
 }
 
 header {
-  max-width: 1400px;
-  max-height: 700px;
+  max-width: 500px;
+  max-height: 500px;
   border: 1px solid color;
   padding: 10px;
   margin: 0 auto;
 }
 
-nav {
+nav ul li {
   font-size: 20px;
   font-family: Helvetica;
+  list-style: none;
 }
 
 main {
