@@ -21,6 +21,11 @@ header {
   margin: 0 auto;
 }
 
+header img {
+  max-width: 300px;
+  max-height: 200px;
+}
+
 nav ul li {
   font-size: 20px;
   font-family: Helvetica;
