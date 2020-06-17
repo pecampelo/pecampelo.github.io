@@ -1,12 +1,22 @@
+/*This is the first website
+I have ever tried my hand at. Apparently it is something that
+can make me earn a lot of money and still be
+something revealingly interesting in every project.
+Let's hope I can do something worthwhile with this.
+
+Code written by Pedro Campelo Matheus, Winter of 2020. */
+
 * {
   box-sizing: border-box;
 }
 
-head {
+head title {
   text-transform: lowercase;
 }
 
 body {
+  width: 1920px
+  height: 1080px;
   text-align:center;
   font-family: Helvetica;
   margin: 0 auto;
@@ -22,18 +32,28 @@ header {
 }
 
 header img {
-  max-width: 300px;
-  max-height: 200px;
+  min-width: 400px;
+  min-height: 400px;
 }
 
-nav ul li {
+ul {
   font-size: 20px;
   font-family: Helvetica;
   list-style: none;
+  display: inline-block;
 }
 
 main {
+  min-width: inherit;
+  max-width: inherit;
+  min-height: inherit;
+  max-height: none;
+}
 
+.button {
+  background-color: #a1e5f7;
+  text-align: center;
+  display: block;
 }
 
 h1 {
