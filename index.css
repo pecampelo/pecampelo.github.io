@@ -33,9 +33,10 @@ header img {
   min-height: 400px;
 }
 
-ul li {
+ul {
   font-size: 20px;
-  font-family: Helvetica;
+  font-family: url("./Calamity-Regular.otf");
+  margin: 0 auto;
   list-style: none;
   display: inline-block;
 }
