@@ -5,7 +5,7 @@ function fuckCounter() {
     } else {
       localStorage.clickcount = 1;
     }
-    document.getElementById("result").innerHTML = "You have fucked the button " + localStorage.clickcount + " time(s).";
+    document.getElementById("result").innerHTML = "You have fucked me <br/>" + localStorage.clickcount + "<br/> time(s) so far.";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
