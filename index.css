@@ -6,16 +6,13 @@ Let's hope I can do something worthwhile with this.
 
 Code written by Pedro Campelo Matheus, Winter of 2020. */
 
-* {
-  box-sizing: border-box;
-}
-
-head title {
+head {
   text-transform: lowercase;
 }
 
 body {
-  width: 1920px
+  box-sizing: border-box;
+  width: 1920px;
   height: 1080px;
   text-align:center;
   font-family: Helvetica;
