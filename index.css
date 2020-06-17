@@ -16,8 +16,10 @@ head {
 
 body {
   box-sizing: border-box;
-  width: 1920px;
-  height: 1080px;
+  min-width: 800px;
+  min-height: 600px;
+  max-width: 1920px;
+  max-height: 1080px;
   text-align:center;
   margin: 0 auto;
   padding: 50px 50px;
@@ -29,9 +31,11 @@ header {
   margin: 0 auto;
 }
 
-header img {
-  max-width: 400px;
-  max-height: 400px;
+#logo {
+  min-width: 600px;
+  min-height: 600px;
+  max-width: 1280px;
+  max-height: 720px;
   position: relative;
 }
 
@@ -47,20 +51,27 @@ main {
 }
 
 ul {
-  font-size: 20px;
+  font-size: 33px;
   font-family: url("./Calamity-Regular.otf");
   margin: 0px 0px;
   list-style: none;
   display: inline-block;
+  padding: none;
 }
 
 li {
   padding: 30px 0px;
 }
 
+li:hover {
+  background-color: crimson;
+}
+
 span {
   padding: 20px 0px;
-  font-family: Helvetica;
+  font-family: Georgia;
+  font-size: 30px;
+  padding: 30px 0px;
 }
 
 .fuckButton {
