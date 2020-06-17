@@ -33,7 +33,7 @@ header img {
   min-height: 400px;
 }
 
-ul {
+ul li {
   font-size: 20px;
   font-family: Helvetica;
   list-style: none;
