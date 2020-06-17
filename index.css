@@ -5,6 +5,9 @@ something revealingly interesting in every project.
 Let's hope I can do something worthwhile with this.
 
 Code written by Pedro Campelo Matheus, Winter of 2020. */
+* {
+  box-sizing: border-box;
+}
 
 head {
   text-transform: lowercase;
