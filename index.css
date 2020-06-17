@@ -35,6 +35,9 @@ header img {
   position: relative;
 }
 
+nav {
+  padding: 150px 150px;
+}
 ul {
   font-size: 20px;
   font-family: url("./Calamity-Regular.otf");
