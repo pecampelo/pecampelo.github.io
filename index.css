@@ -65,13 +65,13 @@ ul {
   display: inline-block;
 }
 
-li {
+li a {
   border: 7px solid pink;
   padding: 30px 30px;
   display: inline-block;
 }
 
-li:hover {
+li a:hover {
   border: 7px solid black;
   background-color: #a9f5bd;
 }
