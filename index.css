@@ -19,69 +19,82 @@ body {
   min-width: 800px;
   min-height: 600px;
   max-width: 1920px;
-  max-height: 1080px;
   text-align:center;
   margin: 0 auto;
-  padding: 50px 50px;
+  padding: 40px 40px;
 }
 
 header {
-  border: 3px solid pink;
-  padding: 100px;
+  border: 4px solid pink;
+  padding: 20px;
   margin: 0 auto;
+  position: relative;
 }
 
 #logo {
+  box-sizing: border-box;
   min-width: 600px;
   min-height: 600px;
   max-width: 1280px;
   max-height: 720px;
-  position: relative;
+  overflow: hidden;
 }
 
 nav {
-  padding: 150px 150px;
+  border: 4px 4px 0px 4px solid pink;
+  padding: 80px 80px;
 }
 
 main {
-  min-width: inherit;
   max-width: inherit;
-  min-height: inherit;
   max-height: none;
 }
 
+section {
+  position: static;
+  margin-top: 0px;
+  border: 4px solid pink;
+  padding: 80px 80px;
+}
+
 ul {
-  font-size: 33px;
+  font-size: 35px;
   font-family: url("./Calamity-Regular.otf");
   margin: 0px 0px;
   list-style: none;
   display: inline-block;
-  padding: none;
 }
 
 li {
-  padding: 30px 0px;
+  border: 7px solid pink;
+  padding: 30px 30px;
+  display: inline-block;
 }
 
 li:hover {
-  background-color: crimson;
+  border: 7px solid black;
+  background-color: #a9f5bd;
 }
 
 span {
-  padding: 20px 0px;
-  font-family: Georgia;
-  font-size: 30px;
-  padding: 30px 0px;
+  padding-right: 20px;
+  font-family: url("./Calamity-Bold.otf");
+  font-size: 50px;
+  padding: 60px 0px;
 }
 
-.fuckButton {
-  background-color: #a1e5f7;
-  text-align: center;
+button {
   display: block;
+  position: relative;
+  margin: 70px auto;
+  padding: 4px 18px;
+  font-size: 28px;
 }
 
-
-h1 {
-  font-family: sans-serif;
-  text-align:center;
+#result {
+  padding: 40px 0px;
+  position: relative;
+  display: block;
+  font-size: 45px;
+  font-weight: bold;
 }
