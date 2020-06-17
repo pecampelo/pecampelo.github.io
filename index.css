@@ -43,7 +43,7 @@ ul {
   font-family: url("./Calamity-Regular.otf");
   margin: 0px 0px;
   list-style: none;
-  display: inline;
+  display: inline-block;
 }
 
 li
