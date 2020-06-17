@@ -10,3 +10,6 @@ function fuckCounter() {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
 }
+
+var audio = document.getElementById("music");
+audio.volume = 0.2;

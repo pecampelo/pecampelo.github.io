@@ -4,22 +4,16 @@
     <meta charset='utf-8'>
     <link rel="icon" href="./icon.png">
     <link href="./index.css" type="text/css" rel='stylesheet'>
-    <script src="./index.js"></script>
     <title>casa cora.</title>
   </head>
   <body>
     <nav>
-      <ul>
-        <li>Serviços</li>
-        <li>Quem somos</li>
-        <li>Portfólio</li>
-        <li>Contato</li>
+      <div><a class='navMain' href='./index.html'><img src="./logo1.png" alt="Logo" id='logo'></a></div>
+        <div><a class='navButton' href='./serviços.html'>Serviços</a></div>
+        <div><a class='navButton' href='./quem-somos.html'>Quem Somos</a></div>
+        <div><a class='navButton' href='./portfolio.html'>Portfólio</a></div>
+        <div><a class='navButton' href='./contato.html'>Contato</a></div>
     </nav>
-    <header>
-      <div>
-        <img src="./logo1.png" alt="Logo" id='logo'>
-      </div>
-    </header>
     <main>
       <section>
         <div>
@@ -27,9 +21,16 @@
             to love me like you do. </span>
           <button type='button' onclick="fuckCounter()"> Fuck Me </button>
         <div id='result'> </div>
+        <div class='musicplayer'>
+          <audio controls id='music'>
+            <source src='./orpheus.mp3' type='audio/mp3'> Your browser does not support this.
+          </audio>
+          <span> Play this for me, bb. </span>
+        </div>
       </section>
     </main>
     <footer></footer>
 
   </body>
+  <script src="./index.js"></script>
 </html>

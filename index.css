@@ -9,12 +9,23 @@ Code written by Pedro Campelo Matheus, Winter of 2020. */
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Calamity';
+  src: url("./Calamity-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 head {
   text-transform: lowercase;
 
 }
 
 body {
+  background-image: url('./homepage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   box-sizing: border-box;
   min-width: 800px;
   min-height: 600px;
@@ -24,15 +35,15 @@ body {
   padding: 40px 40px;
 }
 
-header {
+/* header {
   border: 4px  solid pink;
   padding: 20px;
   margin: 0 auto;
   position: relative;
 }
-
+*/
 #logo {
-  box-sizing: border-box;
+  box-sizing: content-box;
   min-width: 600px;
   min-height: 600px;
   max-width: 1280px;
@@ -46,6 +57,8 @@ nav {
 }
 
 main {
+  background-color: rgba(255, 255, 255, 0.3);
+  background
   max-width: inherit;
   max-height: none;
 }
@@ -57,32 +70,72 @@ section {
   padding: 80px 80px;
 }
 
+/*
 ul {
   font-size: 35px;
-  font-family: url("./Calamity-Regular.otf");
+  font-family: Calamity;
   margin: 0px 0px;
   list-style: none;
   display: inline-block;
 }
 
-li  {
-  border: 7px solid pink;
-  padding: 30px 30px;
+li {
   display: inline-block;
+  padding: 30px 30px;
+}
+*/
+
+.navMain {
+  padding: -500px -500px;
+  display: block;
+  text-decoration: none;
+  position: relative;
 }
 
-li:hover {
-  border: 7px solid black;
+.navMain:hover {
+  margin: -5px -5px;
+  border: 5px solid black;
+  color: white;
   background-color: #a9f5bd;
 }
 
-span {
-  padding-right: 20px;
-  font-family: url("./Calamity-Bold.otf");
-  font-size: 50px;
-  padding: 60px 0px;
+.navButton {
+  border: 7px solid pink;
+  display: inline-grid;
+  padding: 30px 30px;
+  text-decoration: none;
+  position: relative;
+  font-size: 35px;
+  font-family: Calamity;
+  color: white;
+  margin: 20px 20px;
 }
 
+.navButton:hover {
+  border: 7px solid black;
+  background-color: #a9f5bd;
+  color: black;
+}
+
+a:visited {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+
+}
+
+
+span {
+  padding-right: 20px;
+  font-family: Calamity;
+  font-size: 50px;
+  padding: 60px 0px;
+  display: block;
+}
+
+.musicplayer {
+  padding-top: 40px;
+}
 button {
   display: block;
   position: relative;
@@ -91,10 +144,14 @@ button {
   font-size: 28px;
 }
 
+.musicbutton {
+  display: inline-block;
+}
+
 #result {
-  padding: 40px 0px;
-  position: relative;
+  padding: 20px 0px;
   display: block;
+  overflow: inherit;
   font-size: 45px;
   font-weight: bold;
   text-align: center;
