@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  min-width: 600px;
+  min-height: 800px;
+}
