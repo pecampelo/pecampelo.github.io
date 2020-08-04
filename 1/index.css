@@ -9,6 +9,7 @@ Code written by Pedro Campelo Matheus, Winter of 2020. */
   box-sizing: border-box;
 }
 
+/*Added fonts*/
 @font-face {
   font-family: 'Calamity';
   src: url("./Calamity-Regular.otf");
@@ -18,7 +19,6 @@ Code written by Pedro Campelo Matheus, Winter of 2020. */
 
 head {
   text-transform: lowercase;
-
 }
 
 body {
@@ -35,34 +35,17 @@ body {
   padding: 40px 40px;
 }
 
-/* header {
-  border: 4px  solid pink;
-  padding: 20px;
-  margin: 0 auto;
-  position: relative;
-}
-*/
-#logo {
-  box-sizing: content-box;
-  min-width: 600px;
-  min-height: 600px;
-  max-width: 1280px;
-  max-height: 720px;
-  overflow: hidden;
-}
-
+/*Block Layer 1 */
 nav {
   border: 4px 4px 0px 4px solid pink;
   padding: 80px 80px;
 }
-
 main {
   background-color: rgba(255, 255, 255, 0.3);
   background
   max-width: inherit;
   max-height: none;
 }
-
 section {
   position: static;
   margin-top: 0px;
@@ -70,35 +53,20 @@ section {
   padding: 80px 80px;
 }
 
-/*
-ul {
-  font-size: 35px;
-  font-family: Calamity;
-  margin: 0px 0px;
-  list-style: none;
-  display: inline-block;
-}
 
-li {
-  display: inline-block;
-  padding: 30px 30px;
-}
-*/
-
+/*Navigation Buttons */
 .navMain {
   padding: -500px -500px;
   display: block;
   text-decoration: none;
   position: relative;
 }
-
 .navMain:hover {
   margin: -5px -5px;
   border: 5px solid black;
   color: white;
   background-color: #a9f5bd;
 }
-
 .navButton {
   border: 7px solid pink;
   display: inline-grid;
@@ -110,32 +78,19 @@ li {
   color: white;
   margin: 20px 20px;
 }
-
 .navButton:hover {
   border: 7px solid black;
   background-color: #a9f5bd;
   color: black;
 }
 
+/* Links */
 a:visited {
   color: white;
   background-color: inherit;
   text-decoration: none;
-
 }
 
-
-span {
-  padding-right: 20px;
-  font-family: Calamity;
-  font-size: 50px;
-  padding: 60px 0px;
-  display: block;
-}
-
-.musicplayer {
-  padding-top: 40px;
-}
 button {
   display: block;
   position: relative;
@@ -143,10 +98,8 @@ button {
   padding: 4px 18px;
   font-size: 28px;
 }
-
-.musicbutton {
-  display: inline-block;
-}
+.musicplayer {
+  padding-top: 40px;
 
 #result {
   padding: 20px 0px;
