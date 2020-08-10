@@ -1,1 +1,1 @@
-# Pedra, Papel, Tesoura
+# Rock, Paper, Scissors

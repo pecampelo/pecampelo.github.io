@@ -1,10 +1,53 @@
-<DOCTYPE HTML>
-  <html>
-    <head>Jokenpo by Pedro</head>
+
+<html>
+    <head>
+      <title>Dota 2 Tools</title>
+      <link rel='stylesheet' href='./index.css' type='text/css'>
+      <meta name='viewport' content="width=device-width, initial-scale=1.00, maximum-scale=1.00, minimum-scale=1.00 user-scalable=no">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    </head>
     <body>
-      <nav></nav>
-      <main></main>
-      <section></section>
-      <footer></footer>
+      <nav class='sidenav'>
+        <ul>
+            <li><a href='..'>Home</a></li>
+            <li><button type='button' onclick='login()'>Login</button></li>
+        </ul>
+      </nav>
+      <main>
+        <section class='page-title'>
+          <h1> Dota 2 Tools </h1>
+          <h3> your assistant tools to help in mid-game </h3>
+        </section>
+        <section class="list">
+          <ul class='projects'>
+            <li><a href='.\PickWiz'>Pick Wizard</a></li>
+            <li><a href='.\ArmorCalc'>Armor Calculator</a></li>
+            <li><a href='.\MagicResistCalc'>Magic Resistance Calculator</a></li>
+            <li><a href='.\StatResistCalc'>Status Resistance Calculator</a></li>
+            <li><a href='.\LaneOddsCalc'>Lane Odds Calculator</a></li>
+        </section>
+        <section class='video'>
+          <div class='title'>
+            <h1> New Video Releases </h1>
+          </div>
+          <div class='youtube'>
+            <iframe width='1280' height='720'
+            src="https://www.youtube.com/embed/md7OvbQnbN8" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe>
+          </div>
+        </section>
+        <section class='audio'>
+          <button type='button' onclick='breakNames(list1)'>Strength Heroes</button>
+          <button type='button' onclick='breakNames(list2)'>Agility Heroes</button>
+          <button type='button' onclick='breakNames(list3)'>Intelligence Heroes</button>
+          <p id='heroes'></p>
+        </section>
+        </main>
+      <footer>
+        <h3>Developed by Pedro Campelo Matheus</h3>
+        <h4> you can find me on github. </h4>
+      </footer>
+      <script type="text/javascript" src='heroes2.js'></script>
     </body>
-  </html>
+</html>

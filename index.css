@@ -1,20 +1,50 @@
+@font-face {
+  font-family: Calamity;
+  src: url('./1/Calamity-Regular.otf') format ('otf');
+}
+
 * {
   box-sizing: border-box;
 }
 
-section {
-  min-width: 600px;
-  min-height: 800px;
-  margin: 200px 200px 75px 200px;
+body {
+  font-family: Calamity;
+  font-size: 15px;
+  position: relative;
+}
+
+.page-title {
+  margin: 0px;
+  padding: 20px 0px 0px 50px;
+}
+
+.project-list {
+  width: 600px;
+  height: 600px;
+  margin: 50px 200px 75px 100px;
   padding: 50px;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 a {
-  position: relative;
   color: black;
 }
 
 a:visited {
-  position: relative;
   color: black;
+}
+
+a:hover {
+  color: pink;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px 0px 20px 0px;
 }

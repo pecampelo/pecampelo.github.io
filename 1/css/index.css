@@ -42,12 +42,11 @@ nav {
 }
 main {
   background-color: rgba(255, 255, 255, 0.3);
-  background
-  max-width: inherit;
-  max-height: none;
+  max-width: 1920px;
+  max-height: 2160px;
 }
 section {
-  position: static;
+  position: relative;
   margin-top: 0px;
   border: 4px solid pink;
   padding: 80px 80px;
@@ -55,36 +54,35 @@ section {
 
 
 /*Navigation Buttons */
-.navMain {
-  padding: -500px -500px;
-  display: block;
-  text-decoration: none;
-  position: relative;
-}
-.navMain:hover {
-  margin: -5px -5px;
-  border: 5px solid black;
-  color: white;
-  background-color: #a9f5bd;
-}
 .navButton {
   border: 7px solid pink;
-  display: inline-grid;
   padding: 30px 30px;
+  margin: 20px 20px;
+  display: inline-block;
   text-decoration: none;
   position: relative;
   font-size: 35px;
   font-family: Calamity;
   color: white;
-  margin: 20px 20px;
 }
 .navButton:hover {
   border: 7px solid black;
+  position: inherit;
   background-color: #a9f5bd;
   color: black;
 }
 
+.navButton .logo {
+  max-width: 300px;
+  height: 600px;
+  overflow: hidden;
+}
+
 /* Links */
+img {
+  max-width: 800px;
+  max-height: 700px;
+}
 a:visited {
   color: white;
   background-color: inherit;
