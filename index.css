@@ -16,13 +16,43 @@ body {
 .page-title {
   margin: 0px;
   padding: 20px 0px 0px 50px;
+  width: auto;
 }
+.project1 { grid-area: p1;}
+.project2 { grid-area: p2;}
+.project3 { grid-area: p3;}
+.project4 { grid-area: p4;}
+.project5 { grid-area: p5;}
+.project6 { grid-area: p6;}
+.project7 { grid-area: p7;}
+.project8 { grid-area: p8;}
+.project9 { grid-area: p9;}
+.projectX { grid-area: pX;}
+
 
 .project-list {
+  grid-template-columns: repeat(10,100px);
+  display: grid;
+  grid-template-areas:
+    '  p1 p1 p1 p1 p1 .  .  .  .  .  '
+    '  .  p2 p2 p2 p2 p2 .  .  .  .  '
+    '  .  .  p3 p3 p3 p3 p3 .  .  .  '
+    '  .  .  .  .  p4 p4 p4 p4 p4 .  '
+    '  .  .  .  .  .  p5 p5 p5 p5 p5 '
+    '  .  .  .  .  .  p6 p6 p6 p6 p6 '
+    '  .  .  .  .  p7 p7 p7 p7 p7 .  '
+    '  .  .  .  p8 p8 p8 p8 p8  .  .  '
+    '  .  .  p9 p9 p9 p9 p9 .  .  .  '
+    '  .  pX pX pX pX pX .  .  .  .  ';
   width: 600px;
-  height: 600px;
+  height: 1200px;
   margin: 50px 200px 75px 100px;
   padding: 50px;
+}
+
+
+.list {
+  padding: 10px 0px;
 }
 
 h1 {
@@ -31,6 +61,7 @@ h1 {
 
 a {
   color: black;
+  font-size: 18px;
 }
 
 a:visited {
@@ -43,8 +74,5 @@ a:hover {
 
 ul {
   list-style-type: none;
-}
-
-li {
-  padding: 10px 0px 20px 0px;
+  padding-inline-start: 0px;
 }
