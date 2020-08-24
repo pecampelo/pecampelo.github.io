@@ -9,7 +9,7 @@
 
 body {
   font-family: Calamity;
-  font-size: 15px;
+  font-size: 4rem;
   position: relative;
 }
 
@@ -31,7 +31,7 @@ body {
 
 
 .project-list {
-  grid-template-columns: repeat(10,100px);
+  grid-template-columns: repeat(10,120px);
   display: grid;
   grid-template-areas:
     '  p1 p1 p1 p1 p1 .  .  .  .  .  '
