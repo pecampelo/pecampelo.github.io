@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Calamity;
-  src: url('./1/Calamity-Regular.otf') format ('otf');
+  font-family: 'Calamity';
+  src: url('./1/Calamity-Regular.otf') format('otf');
 }
 
 * {
@@ -8,71 +8,153 @@
 }
 
 body {
-  font-family: Calamity;
-  font-size: 4rem;
+  background: rgba(18,16,52, 0.6);
+  background: radial-gradient(circle, rgba(18,16,52,1) 0%, rgba(30,182,207,1) 72%, rgba(255,255,255,1) 100%);
+  font-family: Lato;
   position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .page-title {
-  margin: 0px;
-  padding: 20px 0px 0px 50px;
-  width: auto;
+    padding: 50px 0px 100px 0px;
 }
+
+.list a {
+  padding: 15px;
+}
+
+.list a:hover {
+  transition: 0.4s;
+  color: black;
+}
+
 .project1 { grid-area: p1;}
+.project1 > a:hover, .repo1:hover { background-color:#7ee5e8; }
+
 .project2 { grid-area: p2;}
+.project2 > a:hover, .repo2:hover { background-color: #8d9622;}
+
 .project3 { grid-area: p3;}
+.project3 > a:hover, .repo3:hover { background-color: #951cbd;}
+
 .project4 { grid-area: p4;}
+.project4 > a:hover, .repo4:hover { background-color: #04db8e;}
+
 .project5 { grid-area: p5;}
+.project5 > a:hover, .repo5:hover { background-color: #b03531;}
+
 .project6 { grid-area: p6;}
+.project6 > a:hover, .repo6:hover { background-color: #28b76a;}
+
 .project7 { grid-area: p7;}
+.project7 > a:hover, .repo7:hover { background-color: #6eb2cb;}
+
 .project8 { grid-area: p8;}
+.project8 > a:hover { background-color: #5e6650;}
+
 .project9 { grid-area: p9;}
+.project9 > a:hover { background-color: #95f4e4;}
+
 .projectX { grid-area: pX;}
+.projectX > a:hover { background-color: #d484fc;}
+
+.extra    { grid-area: pY;}
+.extra a  { font-size: 2rem;}
+.extra > a:hover { background-color: #021a9f;}
 
 
 .project-list {
-  grid-template-columns: repeat(10,120px);
+  margin: 50px 200px 75px 100px;
+  height: 1000px;
+  grid-template-columns: repeat(10, 100px);
+  grid-template-rows: repeat(10, 80px) 100px;
   display: grid;
+  align-items: center;
   grid-template-areas:
     '  p1 p1 p1 p1 p1 .  .  .  .  .  '
     '  .  p2 p2 p2 p2 p2 .  .  .  .  '
     '  .  .  p3 p3 p3 p3 p3 .  .  .  '
-    '  .  .  .  .  p4 p4 p4 p4 p4 .  '
-    '  .  .  .  .  .  p5 p5 p5 p5 p5 '
+    '  .  .  .  p4 p4 p4 p4 p4 .  .  '
+    '  .  .  .  .  p5 p5 p5 p5 p5 .  '
     '  .  .  .  .  .  p6 p6 p6 p6 p6 '
     '  .  .  .  .  p7 p7 p7 p7 p7 .  '
-    '  .  .  .  p8 p8 p8 p8 p8  .  .  '
+    '  .  .  .  p8 p8 p8 p8 p8 .  .  '
     '  .  .  p9 p9 p9 p9 p9 .  .  .  '
-    '  .  pX pX pX pX pX .  .  .  .  ';
-  width: 600px;
-  height: 1200px;
-  margin: 50px 200px 75px 100px;
-  padding: 50px;
+    '  .  pX pX pX pX pX .  .  .  .  '
+    '  pY pY pY pY pY pY pY .  .  .  ';
+}
+.git-repos, .music-player {
+  padding-top: 60px;
+  background-color: #111;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 0px; /*change this with JavaScript*/
+  transition: 0.5s;
+  overflow-x: hidden;
 }
 
-
-.list {
-  padding: 10px 0px;
+.git-repos {
+  left: 0;
+}
+.music-player {
+  right: 0;
 }
 
-h1 {
-  font-size: 40px;
+.git-repos a {
+  padding: 22px 8px;
+  text-decoration: none;
+  font-size: 12pt;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 50px;
+}
+
+#title {
+  line-height: 0;
+  font-family: Calamity;
+  font-size: 75pt;
+}
+#sub-title {
+  font-family: Calamity;
+  line-height: 0;
+  font-size: 20pt;
+  position: relative;
+  padding-bottom: 60px;
+}
+.description {
+  background-color: rgba(172, 238, 255, 0.59);
+  display: inline-block;
+  font-size: 15pt;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
 a {
-  color: black;
-  font-size: 18px;
+  color: white;
+  font-size: 18pt;
+  text-decoration: none;
 }
-
-a:visited {
-  color: black;
-}
-
 a:hover {
   color: pink;
+  background-color: black;
 }
 
-ul {
-  list-style-type: none;
-  padding-inline-start: 0px;
+@media screen and (max-height: 450px) {
+  .git-repos { padding-top: 15px; }
+  .git-repos a { font-size: 9pt;}
 }
