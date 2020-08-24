@@ -3,35 +3,42 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="icon" href="./icon.png">
-    <link href="./index.css" type="text/css" rel='stylesheet'>
+    <link rel="icon" href="resources/icon.png">
+    <link href="css/index.css" type="text/css" rel='stylesheet'>
     <title>casa cora.</title>
   </head>
   <body>
+    <div class='nav0'>
+      <a id='return1' href='http://localhost/1'>localhost</a>
+      <a id='return2' href='http://pecampelo.github.io'>GitHub</a>
+      <a id='return3' href='http://localhost/1/readme.md'>readme</a>
+    </div>
     <nav>
-      <ul>
-        <li><a class='navButton' href='.'><img class='logo' src="./logo1.png"></a></li>
-        <div><a class='navButton' href='./serviços.html'>Serviços</a></div>
-        <div><a class='navButton' href='./quem-somos.html'>Quem Somos</a></div>
-        <div><a class='navButton' href='./portfolio.html'>Portfólio</a></div>
-        <div><a class='navButton' href='./contato.html'>Contato</a></div>
-      </ul>
+        <a class='menu navD' href='.'></a>
+        <a class='menu navA' href='html/quem-somos.html'>Quem Somos</a>
+        <a class='menu navB' href='html/portfolio.html'>Portfólio</a>
+        <a class='menu navC' href='html/contato.html'>Contato</a>
     </nav>
     <main>
-      <!--<section>
-        <div>
-          <button type='button' onclick="fuckCounter()"> Fuck Me </button>
-        <div id='result'></div> -->
-        <div class='musicplayer'>
-          <audio controls id='music'>
-            <source src='./orpheus.mp3' type='audio/mp3'> Your browser does not support this.
-          </audio>
-
+        <section class='editorial'>
+        </section>
+        <section class='content'>
+          <div>
+            <button type='button' onclick="fuckCounter()"> Fuck Me </button>
+            <div id='result'></div>
+            <div>
+              <audio controls id='music'>
+                <source src='resources/orpheus.mp3' type='audio/mp3'> Your browser does not support this.
+                </audio>
+                <div id='result'></div>
+          </div>
         </div>
-      </section>
+        </section>
     </main>
-    <footer></footer>
-
+    <footer>
+      <h1>Developed by Pedro Campelo</h1>
+      <p>You can find me on </p><a href='http://pecampelo.github.io'>my GitHub.</a>
+    </footer>
   </body>
-  <script src="./index.js"></script>
+  <script src="js/index.js"></script>
 </html>
