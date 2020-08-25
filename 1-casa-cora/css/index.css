@@ -25,32 +25,39 @@ body {
 /*Block Layer 1 */
 nav {
   border: 4px 4px 4px 4px solid pink;
-  width: 40%;
-  display: grid;
-  position:sticky;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
   top: 5%;
   justify-content: left;
-  vertical-align: middle;
-  grid-template-columns: 35% 35% 30% 20% 15%;
-  grid-template-rows: auto;
+  align-items: center;
+  grid-template-columns: 330px repeat(3, 150px);
+  grid-template-rows: 150px;
   column-gap: 50px;
-  background-color: (0, 0, 0, 0.2);
+  background-color: (255, 255, 255, 0.2);
+}
+
+nav img {
+  object-fit: cover;
+  object-position: -70px -70px;
+  width: 400px;
+  height: 400px;
+
 }
 /*Navigation Buttons */
 .nav0 {
   display: grid;
-  justify-content: flex-start;
-  grid-template-columns: repeat(3, 80px);
+  justify-content: left;
+  grid-template-columns: repeat(4, 80px);
   column-gap: 100px;
   padding-bottom: 60px;
 }
+
 .menu {
     border: 7px solid pink;
-    font-size: 1.6em;
-    word-spacing: 0.1em;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.8em;
+    padding: 10px;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -65,17 +72,13 @@ nav {
 }
 .navD {
   grid-area: 'logo';
-  background-image: url('../resources/logo2.png');
+  width: 300px;
+  height: 300px;
 }
 
 .editorial {
   height: 80rem;
 }
-
-
-
-
-
 
 a {
   text-decoration: none;
