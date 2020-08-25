@@ -5,20 +5,32 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background-color: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  font-family: Calamity;
 }
 
-body {
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  font-family: Lato;
-  position: relative;
+main  {
+  transition: margin-left .5s, margin-right .5s;
+  transition-timing-function: ease-out;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: center;
+}
+
+.footer {
+  padding: 100px auto;
 }
 
 .page-title {
     padding: 50px 0px 100px 0px;
+    position: relative;
 }
 
 .list a {
@@ -26,50 +38,37 @@ body {
 }
 
 .list a:hover {
-  transition: 0.4s;
+  transition: 0.9s;
   color: black;
+  background-color:#b1f3f5;
 }
 
 .project1 { grid-area: p1;}
-.project1 > a:hover, .repo1:hover { background-color:#7ee5e8; }
-
 .project2 { grid-area: p2;}
-.project2 > a:hover, .repo2:hover { background-color: #8d9622;}
-
 .project3 { grid-area: p3;}
-.project3 > a:hover, .repo3:hover { background-color: #951cbd;}
-
 .project4 { grid-area: p4;}
-.project4 > a:hover, .repo4:hover { background-color: #04db8e;}
-
 .project5 { grid-area: p5;}
-.project5 > a:hover, .repo5:hover { background-color: #b03531;}
-
 .project6 { grid-area: p6;}
-.project6 > a:hover, .repo6:hover { background-color: #28b76a;}
-
 .project7 { grid-area: p7;}
-.project7 > a:hover, .repo7:hover { background-color: #6eb2cb;}
-
 .project8 { grid-area: p8;}
-.project8 > a:hover { background-color: #5e6650;}
-
 .project9 { grid-area: p9;}
-.project9 > a:hover { background-color: #95f4e4;}
-
 .projectX { grid-area: pX;}
-.projectX > a:hover { background-color: #d484fc;}
-
 .extra    { grid-area: pY;}
 .extra a  { font-size: 2rem;}
-.extra > a:hover { background-color: #021a9f;}
 
+.repo1:hover { background-color:#7ee5e8;}
+.repo2:hover { background-color: #8d9622;}
+.repo3:hover { background-color: #951cbd;}
+.repo4:hover { background-color: #04db8e;}
+.repo5:hover { background-color: #b03531;}
+.repo6:hover { background-color: #28b76a;}
+.repo7:hover { background-color: #6eb2cb;}
 
 .project-list {
-  margin: 50px 200px 75px 100px;
-  height: 1000px;
+  margin: 50px 100px;
+  height: auto;
   grid-template-columns: repeat(10, 100px);
-  grid-template-rows: repeat(10, 80px) 100px;
+  grid-template-rows: repeat(10, 80px) 120px;
   display: grid;
   align-items: center;
   grid-template-areas:
@@ -85,23 +84,33 @@ body {
     '  .  pX pX pX pX pX .  .  .  .  '
     '  pY pY pY pY pY pY pY .  .  .  ';
 }
-.git-repos, .music-player {
+.git-repos {
+  display: flex;
+  flex-direction: column;
+
   padding-top: 60px;
   background-color: #111;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   top: 0;
+  left: 0;
   height: 100%;
   width: 0px; /*change this with JavaScript*/
-  transition: 0.5s;
+  transition: 0.7s;
   overflow-x: hidden;
 }
 
-.git-repos {
-  left: 0;
-}
 .music-player {
+  padding-top: 60px;
+  background-color: #111;
+  z-index: 3;
+  position: fixed;
+  top: 0;
   right: 0;
+  height: 100%;
+  width: 0px; /*change this with JavaScript*/
+  transition: 0.7s;
+  overflow-x: hidden;
 }
 
 .git-repos a {
@@ -123,26 +132,15 @@ body {
 }
 
 #title {
-  line-height: 0;
-  font-family: Calamity;
-  font-size: 75pt;
+  font-size: 60pt;
 }
 #sub-title {
-  font-family: Calamity;
-  line-height: 0;
   font-size: 20pt;
   position: relative;
-  padding-bottom: 60px;
 }
 .description {
-  background-color: rgba(172, 238, 255, 0.59);
-  display: inline-block;
-  font-size: 15pt;
-}
-#main {
-  transition: margin-left .5s;
-  transition: margin-right .5s;
-  padding: 20px;
+background-color: rgba(172, 238, 255, 0.59);
+padding: 10px;
 }
 
 a {
