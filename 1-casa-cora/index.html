@@ -2,44 +2,42 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0 shrink-to-fit=no'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no'>
     <link rel="icon" href="resources/icon.png">
     <link href="css/index.css" type="text/css" rel='stylesheet'>
     <title>casa cora.</title>
   </head>
   <body>
-    <div class='nav0'>
+    <div class='devnav' id='devnav'>
       <a id='return0' href='..'>Back</a>
       <a id='return1' href='http://localhost/1-casa-cora'>localhost</a>
       <a id='return2' href='http://pecampelo.github.io/1-casa-cora'>GitHub</a>
       <a id='return3' href='./readme.md'>readme</a>
     </div>
-    <nav>
-        <a class='menu navD' href='.'></a>
+    <nav id='nav'>
+        <a class='menu navD' href='.'><img src='resources/logo3.png' width='400' height='400'</a>
         <a class='menu navA' href='html/quem-somos.html'>Quem Somos</a>
         <a class='menu navB' href='html/portfolio.html'>Portfólio</a>
         <a class='menu navC' href='html/contato.html'>Contato</a>
+        <a class='menu navE' href='javascript:void(0)' onclick='devTools()' id='devbutton'>dev.</a>
     </nav>
     <main>
         <section class='editorial'>
+          <img src='resources/Templates_Linhas2.jpg' alt='Editorial Casa Cora' width='1920' height='1080'>
         </section>
-        <section class='content'>
-          <div>
-            <button type='button' onclick="fuckCounter()"> Fuck Me </button>
-            <div id='result'></div>
-            <div>
-              <audio controls id='music'>
-                <source src='resources/orpheus.mp3' type='audio/mp3'> Your browser does not support this.
-                </audio>
-                <div id='result'></div>
-          </div>
-        </div>
+        <!-- <section class='content text'>
+          <button type='button' onclick="fuckCounter()"> Fuck Me </button>
+          <div id='result'></div> -->
+        <section class='content music'>
+            <audio controls id='music'>
+              <source src='resources/orpheus.mp3' type='audio/mp3'> Your browser does not support this.
+            </audio>
         </section>
     </main>
     <footer>
       <h1>Developed by Pedro Campelo</h1>
       <p>You can find me on </p><a href='http://pecampelo.github.io'>my GitHub.</a>
     </footer>
+    <script src="js/index.js"></script>
   </body>
-  <script src="js/index.js"></script>
 </html>
