@@ -4,57 +4,57 @@ Code written by Pedro Campelo Matheus, Winter of 2020. */
 * {
   box-sizing: border-box;
   text-align: center;
-  font-family: 'Calamity';
+  font-family: Calamity;
   margin: 0;
   padding: 0;
   border: 0;
+  scroll-behavior: smooth;
 }
 
 /*Added fonts*/
 @font-face {
   font-family: 'Calamity';
-  src: url("resources/Calamity-Regular.otf");
+  src: url("../resources/Calamity-Regular.otf");
 }
 
 body {
+  width: 100%;
+  height: auto;
   background-image: url('../resources/homepage.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin: 50px 0px 100px 0px;
 }
 
-/*Block Layer 1 */
 nav {
   border: 4px 4px 4px 4px solid pink;
   width: 100%;
   display: flex;
   flex-direction: row;
   position: sticky;
-  top: 5%;
-  justify-content: left;
   align-items: center;
-  grid-template-columns: 300px repeat(3, 150px);
-  grid-template-rows: 300px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: auto;
   column-gap: 50px;
   background: rgba(255, 255, 255, 1);
-  background-blend-mode:color-burn;
+  background-blend-mode: color-burn;
 }
 
 nav img {
   object-fit: scale-down;
-  object-position: -67px -143px;
+  object-position: -60px -137px;
 }
 /*Navigation Buttons */
 
-.nav0 {
+.devnav {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  align-items: center;
-  vertical-align: center;
   grid-template-columns: repeat(4, 150px);
   column-gap: 90px;
-  margin-right: 40px;
+  height: 0;
+  transition: height 1.4s;
+  overflow-y: hidden;
 }
 
 .menu {
@@ -68,24 +68,19 @@ nav img {
   grid-area: 'logo';
   width: 300px;
   height: 150px;
+  margin-left: 40px;
+  border: none;
 }
 .navA {
-  grid-area: 'menu-a';
+  margin-left: 5%;
 }
-.navB {
-  grid-area: 'menu-b';
+.navE {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  align-items: flex-end;
 }
-.navC {
-  grid-area: 'menu-c';
-}
-
-.editorial {
-  height: 1100px;
-  background-image: url('../resources/Templates_Final14.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 a {
   text-decoration: none;
   color: rgba(245, 106, 28, 0.94);
@@ -106,9 +101,12 @@ a:visited {
   text-decoration: none;
 }
 
+}
+
 .content {
+  background-image: url('../resources/Templates_Final14.jpg');
+  background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 4px solid pink;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -128,6 +126,6 @@ footer {
 }
 
 #result {
-  padding: 150px;
+  padding: 300px;
   font-size: 2rem;
 }

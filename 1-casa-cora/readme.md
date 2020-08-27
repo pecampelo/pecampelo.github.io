@@ -38,9 +38,6 @@
 * [ ] Facebook Pixel API
 * [ ] Google Ads Tag
 
-###### Lead - É uma pessoa que deixou informações de contato para a empresa.
-###### Remarketing - É a reimpactação do público que já teve contato com a marca.
-
 2. Terceirizado?
 
 * [ ] Checar http://wordpress.com
@@ -49,15 +46,22 @@
 * [ ] Descobrir
 * [ ] Descobrir
 
+#### Lead - É uma pessoa que deixou informações de contato para a empresa.
+#### Remarketing - É a reimpactação do público que já teve contato com a marca.
+
 ### Captação de Leads
 
 * [ ] Nome
 * [ ] E-mail
 * [ ] Conexão com Ferramenta de Automação
-    - MailChimp
-    - Zapier
+    - MailChimp?
+    - Zapier?
 
-## Landing Page
+## Criação de Landing Page
+
+* [ ] Critério 1
+* [ ] Critério 2
+* [ ] Critério 3
 
 ### Exemplos
 https://lp.agenciamestre.com/e-book-fazer-empresa-vender-mais?_ga=2.2695225.802690020.1598239992-2076910041.1598239992&utm_expid=.oLO61kFGSxCO4qZRnFJBCA.1&utm_referrer=
@@ -73,4 +77,4 @@ https://lp.agenciamestre.com/e-book-fazer-empresa-vender-mais?_ga=2.2695225.8026
 ### Banco de Dados
 
 * [ ] Conexão com Banco de Dados
-* [ ] MySQL
+* [ ] Decidir entre MySQL e PostgreSQL
