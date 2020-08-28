@@ -13,22 +13,3 @@ function fuckCounter() {
 
 var audio = document.getElementById("music");
 audio.volume = 0.2;
-
-document.getElementById('devbutton').addEventListener('click', devTools);
-
-function devTools() {
-    navSize = document.getElementById('devnav').style.height;
-    if (navSize == 50) {
-      return open(); }
-    return close();
-}
-
-function open() {
-    document.getElementById('devnav').style.height = '50px';
-    document.getElementById('nav').style.marginTop = '50px';
-}
-
-function close()  {
-    document.getElementById('devnav').style.height = '0px';
-    document.getElementById('nav').style.marginTop = '0px';
-  }

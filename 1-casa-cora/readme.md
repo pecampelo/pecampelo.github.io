@@ -19,7 +19,9 @@
 
 ### Página de Administrador
 
-1. Página do Zero?
+Será que faço ou terceirizo?
+
+1. Página do Zero
 
 * [ ] Editor de texto multiformatação
     - Imagens
@@ -38,7 +40,10 @@
 * [ ] Facebook Pixel API
 * [ ] Google Ads Tag
 
-2. Terceirizado?
+## Lead - É uma pessoa que deixou informações de contato para a empresa.
+## Remarketing - É a reimpactação do público que já teve contato com a marca.
+
+2. Terceirizado
 
 * [ ] Checar http://wordpress.com
 * [ ] Checar https://ghost.org/
@@ -46,35 +51,28 @@
 * [ ] Descobrir
 * [ ] Descobrir
 
-#### Lead - É uma pessoa que deixou informações de contato para a empresa.
-#### Remarketing - É a reimpactação do público que já teve contato com a marca.
-
 ### Captação de Leads
 
 * [ ] Nome
 * [ ] E-mail
 * [ ] Conexão com Ferramenta de Automação
-    - MailChimp?
-    - Zapier?
+    - MailChimp
+    - Zapier
 
-## Criação de Landing Page
+### Landing Page
 
-* [ ] Critério 1
-* [ ] Critério 2
-* [ ] Critério 3
-
-### Exemplos
+# Exemplos
 https://lp.agenciamestre.com/e-book-fazer-empresa-vender-mais?_ga=2.2695225.802690020.1598239992-2076910041.1598239992&utm_expid=.oLO61kFGSxCO4qZRnFJBCA.1&utm_referrer=
 
-- Nome
-- Email
-- Empresa
-- Cargo
-- Orçamento
-- Origem
-- Número de funcionários na empresa
+Nome
+Email
+Empresa
+Cargo
+Orçamento
+Origem
+Número de funcionários na empresa
 
 ### Banco de Dados
 
 * [ ] Conexão com Banco de Dados
-* [ ] Decidir entre MySQL e PostgreSQL
+* [ ] MySQL
