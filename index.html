@@ -1,29 +1,36 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <section class='git-repos' id='sidenavOne'>
-      <a href='javascript:void(0)' class='closebtn' onclick='closeNavOne()'>&times;</a>
-      <a class='repo1' href='http://github.com/pecampelo/pecampelo.github.io'>Main Portfolio</a>
-      <a class='repo2' href='http://github.com/pecampelo/php-laravel-exercises'>PHP/Laravel Exercises</a>
-      <a class='repo3' href='http://github.com/pecampelo/C-lang-snippets'>C Lang. snippets</a>
-      <a class='repo4' href='http://github.com/pecampelo/js-frameworks-test'>JS Frameworks Test</a>
-      <a class='repo5' href='http://github.com/pecampelo/css-frameworks-exercises'>CSS Frameworks Exercises</a>
-      <a class='repo6' href='http://github.com/pecampelo/Pythonapp'>Python exercises</a>
-      <a class='repo7' href='http://github.com/pecampelo/lua-application'>Lua application</a>
-    </section>
-    <section class='music-player' id='sidenavTwo'>
-      <a href='javascript:void(0)' class='closebtn' onclick='closeNavTwo()'>&times;</a>
+    <nav class='left-nav'>
+      <a href='javascript:void(0)' class='closebtn button1' onclick='closeNavOne()'>&times;</a>
+      <a class='navbutton' href='http://github.com/pecampelo/pecampelo.github.io'>Main Portfolio</a>
+      <a class='navbutton' href='http://github.com/pecampelo/php-laravel-exercises'>PHP/Laravel Exercises</a>
+      <a class='navbutton' href='http://github.com/pecampelo/C-lang-snippets'>C Lang. snippets</a>
+      <a class='navbutton' href='http://github.com/pecampelo/js-frameworks-test'>JS Frameworks Test</a>
+      <a class='navbutton' href='http://github.com/pecampelo/css-frameworks-exercises'>CSS Frameworks Exercises</a>
+      <a class='navbutton' href='http://github.com/pecampelo/Pythonapp'>Python exercises</a>
+      <a class='navbutton' href='http://github.com/pecampelo/lua-application'>Lua application</a>
+    </nav>
+    <nav class='right-nav'>
+      <a href='javascript:void(0)' class='closebtn button2' onclick='closeNavTwo()'>&times;</a>
       <iframe src="https://open.spotify.com/embed/playlist/3FDwLf6kKLHupb1V534Nqm" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </section>
+    </nav>
     <main>
+      <section class='icons'>
+        <p> </p>
+        <section>
       <section class='page-title'>
         <h1 class='description' id='title'> Pedro Campelo's </h1>
         <h3 class='description' id='sub-title'> Portfolio Website </h3>
-        <p class='description'> I am a self-taught developer. Have a look at my <a href='javascript:void(0)' onclick='openNavOne()'>GitHub</a> <br> <br> Want to listen to my playlist? <a href='javascript:void(0)' onclick='openNavTwo()'>Where is it?</a></p>
+        <p class='description'> I am a self-taught developer.</p>
+        <p class='description'> Have a look at my <a href='javascript:void(0)' class='button1' onclick='openNavOne()'>GitHub</a> <a href='javascript:void(0)' class='button1' onclick='leftNav(1)'>GitHub 2</a></p>
+        <p class='description'> Want to listen to my playlist? <br> <a href='javascript:void(0)' class='button2' onclick='openNavTwo()'>Where is it?</a>
+        <a href='javascript:void(0)' class='button2' onclick='rightNav(1)'>Where is it? 2</a></p>
       </section>
       <section class="project-list">
           <div class='list project1'><a href='.\1-casa-cora'>Project 1 - Casa Cora</a></div>
@@ -32,11 +39,10 @@
           <div class='list project4'><a href='.\4-bug-tracker'>Projeto 4 - Bug Tracker</a></div>
           <div class='list project5'><a href='.\5-commerce-platform'>Project 5 - Commerce Platform</a></div>
           <div class='list project6'><a href='.\6-videoapp'>Project 6 - Video Chat App</a></div>
-          <div class='list project7'><a href='.\7-onlinegm'>Project 7 - Online Game</a></div>
-          <div class='list project8'><a href='.\8-game-solver'>Project 8 - Game Solver</a></div>
-          <div class='list project9'><a href='.\9-worder'>Project 9 - Worder</a></div>
-          <div class='list projectX'><a href='.\an-ending-project'>Project 10 - Project Explainer</a></div>
-          <div class='list extra'><a href='.\extra-nodeserver'>Extra - Personal NodeJS Server</a></div>
+          <div class='list project7'><a href='.\7-online-games'>Project 7 - Online Games</a></div>
+          <div class='list project8'><a href='.\8-gf-button'>Project 8 - Girlfriend Button</a></div>
+          <div class='list project9'><a href='.\9-project-explainer'>Project 9 - Project Explainer </a></div>
+          <div class='list projectX'><a href='.\10-web-server'>Project 10 - Web Server</a></div>
       </section>
       <footer>
           <h3> Developed by Pedro Campelo Matheus. All rights reserved.</h3>
