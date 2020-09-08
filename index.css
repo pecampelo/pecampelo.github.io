@@ -99,6 +99,7 @@ a:hover {
 .project9 { grid-area: p9;}
 .projectX { grid-area: pX;}
 
+/* now */
 .list, .list a {
   margin-bottom: 30px;
   padding: 15px;
