@@ -1,14 +1,11 @@
 /*
-
-Code written by Pedro Campelo Matheus, Winter of 2020. */
+Code written by Pedro Campelo Matheus. All rights reserved.*/
 * {
   box-sizing: border-box;
-  text-align: center;
   font-family: Calamity;
   margin: 0;
   padding: 0;
   border: 0;
-  scroll-behavior: smooth;
 }
 
 /*Added fonts*/
@@ -17,115 +14,141 @@ Code written by Pedro Campelo Matheus, Winter of 2020. */
   src: url("../resources/Calamity-Regular.otf");
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
-  width: 100%;
-  height: auto;
-  background-image: url('../resources/homepage.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  text-align: center;
+  color: black;
+  font-size: 15pt;
 }
 
 nav {
-  border: 4px 4px 4px 4px solid pink;
   width: 100%;
+  height: 100px;
   display: flex;
-  flex-direction: row;
-  position: sticky;
+  position: fixed;
+  flex-flow: row wrap;
+  flex-shrink: 0.5;
+  column-gap: 40px;
+  align-content: space-around;
+  top: 0px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8015581232492998) 35%, rgba(255,255,255,0.5998774509803921) 53%, rgba(255,255,255,0.4234068627450981) 71%, rgba(255,255,255,0) 100%);
+  background-blend-mode: darken;
+  z-index: 3;
+}
+
+main {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: auto;
-  column-gap: 50px;
-  background: rgba(255, 255, 255, 1);
-  background-blend-mode: color-burn;
 }
 
-nav img {
-  object-fit: scale-down;
-  object-position: -60px -137px;
+.dash-before::before {
+  content: '';
+  width: 100px;
+  height: 5px;
+  margin: 0px auto 40px auto;
+  background: rgba(245, 106, 28, 0.94);
 }
-/*Navigation Buttons */
 
-.devnav {
+section.bg {
+  width: 100vw;
+  height: 100vh;
+  position: static;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow:inherit;
+}
+
+section p, section a, footer p, footer a {
+  line-height: 3;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background: rgba(245, 106, 28, 0.7);
+  height:auto;
+}
+
+
+button {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+/* .devnav {
   display: flex;
   width: 100%;
   flex-direction: row;
-  grid-template-columns: repeat(4, 150px);
-  column-gap: 90px;
+  display: absolute;
+  grid-template-columns: repeat(4, 130px);
+  column-gap: 60px;
   height: 0;
   transition: height 1.4s;
   overflow-y: hidden;
-}
+} */
 
 .menu {
     border: 7px solid pink;
-    font-size: 1.2em;
-    padding: 10px;
+    font-size: 14pt;
+    padding: 8px;
     overflow: hidden;
-    white-space: nowrap;
 }
-.navD {
-  grid-area: 'logo';
-  width: 300px;
-  height: 150px;
-  margin-left: 40px;
-  border: none;
-}
+
 .navA {
   margin-left: 5%;
 }
-.navE {
+.navB {
   border: none;
   padding: 0;
   margin: 0;
   font-size: 0.9em;
-  align-items: flex-end;
 }
+
 a {
   text-decoration: none;
   color: rgba(245, 106, 28, 0.94);
   font-size: 1em;
 }
-
 a:hover {
   background-color: #a9f5bd;
   transition: 0.8s;
   color: black;
 }
-
 a:active {
   color:black;
 }
-/* Links */
 a:visited {
   text-decoration: none;
 }
 
-}
-
-.content {
-  background-image: url('../resources/Templates_Final14.jpg');
-  background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  color: white;
-}
-
-button {
-  padding: 4px 18px;
-  font-size: 28px;
-}
-
-
-footer {
-  margin-top: 50px;
-  padding: 150px;
-  border: 4px solid pink;
-}
-
 #result {
-  padding: 300px;
-  font-size: 2rem;
+  padding: 50px;
+  text-align: center;
+  font-size: 13pt;
 }
