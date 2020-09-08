@@ -1,4 +1,4 @@
-function jokenpo(userChoice) {
+ function jokenpo(userChoice) {
   const choice = ['Rock', 'Paper', 'Scissors'];
   const possibility = ['We have ourselves a tie.', 'The CPU Wins.', 'The Player wins.'];
   function enemy() {

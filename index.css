@@ -9,39 +9,84 @@
   padding: 0;
   border: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  font-family: Calamity;
-}
-
-main  {
-  transition: margin-left .5s, margin-right .5s;
-  transition-timing-function: ease-out;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  vertical-align: center;
+  width: 100vw;
+  font-family: Calamity;
+  overflow-x: hidden;
 }
 
-.footer {
-  padding: 100px auto;
+main {
+  transition: 1000ms;
+  display: flex;
+  padding: 100px 200px 0px 300px;
+  text-align: left;
 }
+section {
+
+}
+footer {
+
+}
+
+/*
+                  Images, Videos and Links
+*/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+  background-color: black;
+}
+
+/*
+                  Navigation Bars and
+                  Main Content Interaction
+*/
+
+.visible-left-nav-in-main {
+  margin-left: 175px;
+}
+
+.visible-right-nav-in-main {
+  margin-right: 300px;
+}
+
+/*
+                  Page Title
+*/
 
 .page-title {
     padding: 50px 0px 100px 0px;
     position: relative;
+    line-height: 2;
 }
 
-.list a {
-  padding: 15px;
+.page-title a, .list a{
+  color: white;
 }
 
-.list a:hover {
-  transition: 0.9s;
-  color: black;
-  background-color:#b1f3f5;
+.description {
+    background-color: rgba(168, 255, 150, 0.67);
 }
+
+.description a:hover {
+  transition: 0.6s;
+}
+
+/*
+                  Project List
+*/
 
 .project1 { grid-area: p1;}
 .project2 { grid-area: p2;}
@@ -53,41 +98,54 @@ main  {
 .project8 { grid-area: p8;}
 .project9 { grid-area: p9;}
 .projectX { grid-area: pX;}
-.extra    { grid-area: pY;}
-.extra a  { font-size: 2rem;}
 
-.repo1:hover { background-color:#7ee5e8;}
-.repo2:hover { background-color: #8d9622;}
-.repo3:hover { background-color: #951cbd;}
-.repo4:hover { background-color: #04db8e;}
-.repo5:hover { background-color: #b03531;}
-.repo6:hover { background-color: #28b76a;}
-.repo7:hover { background-color: #6eb2cb;}
-
-.project-list {
-  margin: 50px 100px;
-  height: auto;
-  grid-template-columns: repeat(10, 100px);
-  grid-template-rows: repeat(10, 80px) 120px;
-  display: grid;
-  align-items: center;
-  grid-template-areas:
-    '  p1 p1 p1 p1 p1 .  .  .  .  .  '
-    '  .  p2 p2 p2 p2 p2 .  .  .  .  '
-    '  .  .  p3 p3 p3 p3 p3 .  .  .  '
-    '  .  .  .  p4 p4 p4 p4 p4 .  .  '
-    '  .  .  .  .  p5 p5 p5 p5 p5 .  '
-    '  .  .  .  .  .  p6 p6 p6 p6 p6 '
-    '  .  .  .  .  p7 p7 p7 p7 p7 .  '
-    '  .  .  .  p8 p8 p8 p8 p8 .  .  '
-    '  .  .  p9 p9 p9 p9 p9 .  .  .  '
-    '  .  pX pX pX pX pX .  .  .  .  '
-    '  pY pY pY pY pY pY pY .  .  .  ';
+.list, .list a {
+  margin-bottom: 30px;
+  padding: 15px;
+  font-size: 19pt;
 }
-.git-repos {
+
+.list a:hover {
+  transition: 0.9s;
+  color: black;
+  background-color:#b1f3f5;
+}
+
+@media only screen and (orientation: landscape) {
+  .project-list {
+      margin: 50px 200px;
+      grid-template-columns: repeat(9, 100px);
+      grid-template-rows: repeat(10, 80px) 120px;
+      display: grid;
+      align-items: center;
+      grid-template-areas:
+      '  p1 p1 p1 p1 p1 .  .  .  .  '
+      '  .  p2 p2 p2 p2 p2 .  .  .  '
+      '  .  .  p3 p3 p3 p3 p3 .  .  '
+      '  .  .  .  p4 p4 p4 p4 p4 .  '
+      '  .  .  .  .  p5 p5 p5 p5 p5 '
+      '  .  .  .  .  p6 p6 p6 p6 p6 '
+      '  .  .  .  p7 p7 p7 p7 p7 .  '
+      '  .  .  p8 p8 p8 p8 p8 .  .  '
+      '  .  p9 p9 p9 p9 p9 .  .  .  '
+      '  pX pX pX pX pX .  .  .  .  ';
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .project-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*
+                Navigation Bars and Buttons
+*/
+
+.left-nav {
   display: flex;
   flex-direction: column;
-
   padding-top: 60px;
   background-color: #111;
   z-index: 2;
@@ -95,12 +153,17 @@ main  {
   top: 0;
   left: 0;
   height: 100%;
-  width: 0px; /*change this with JavaScript*/
+  width: 0px;   /*change this with JavaScript*/
   transition: 0.7s;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-.music-player {
+.visible-left-nav {
+  width: 175px;
+}
+
+.right-nav {
   padding-top: 60px;
   background-color: #111;
   z-index: 3;
@@ -108,28 +171,41 @@ main  {
   top: 0;
   right: 0;
   height: 100%;
-  width: 0px; /*change this with JavaScript*/
+  width: 0;     /*change this with JavaScript*/
   transition: 0.7s;
   overflow-x: hidden;
 }
 
-.git-repos a {
-  padding: 22px 8px;
-  text-decoration: none;
+.visible-right-nav {
+  width: 300px;
+}
+
+.navbutton {
   font-size: 12pt;
+  line-height: 1.3;
+  padding: 12px 8px;
+  text-decoration: none;
   color: white;
-  display: block;
   transition: 0.3s;
+}
+
+.navbutton:hover {
+  transition: 300ms;
+  color: black;
+  background-color: white;
 }
 
 .closebtn {
   position: absolute;
   top: 0;
   right: 20px;
-  font-size: 20px;
+  font-size: 9pt;
   padding: 5px;
   margin-left: 50px;
 }
+/*
+                  ID Selectors
+*/
 
 #title {
   font-size: 60pt;
@@ -137,23 +213,4 @@ main  {
 #sub-title {
   font-size: 20pt;
   position: relative;
-}
-.description {
-background-color: rgba(172, 238, 255, 0.59);
-padding: 10px;
-}
-
-a {
-  color: white;
-  font-size: 18pt;
-  text-decoration: none;
-}
-a:hover {
-  color: pink;
-  background-color: black;
-}
-
-@media screen and (max-height: 450px) {
-  .git-repos { padding-top: 15px; }
-  .git-repos a { font-size: 9pt;}
 }
