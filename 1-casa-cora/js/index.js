@@ -6,6 +6,8 @@ function fuckCounter() {
       localStorage.clickcount = 1;
     }
     document.getElementById("result").innerHTML = "You have fucked me <br/>" + localStorage.clickcount + "<br/> time(s) so far.";
+    document.getElementById('result').style.height = '50px';
+    document.getElementById('result').style.marginBottom = '50px';  
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
