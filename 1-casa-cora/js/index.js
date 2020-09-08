@@ -14,21 +14,20 @@ function fuckCounter() {
 var audio = document.getElementById("music");
 audio.volume = 0.2;
 
-document.getElementById('devbutton').addEventListener('click', devTools);
-
-function devTools() {
-    navSize = document.getElementById('devnav').style.height;
-    if (navSize == 50) {
-      return open(); }
-    return close();
-}
-
-function open() {
-    document.getElementById('devnav').style.height = '50px';
-    document.getElementById('nav').style.marginTop = '50px';
-}
-
-function close()  {
-    document.getElementById('devnav').style.height = '0px';
-    document.getElementById('nav').style.marginTop = '0px';
-  }
+// let devbutton = document.querySelector('#devbutton');
+// let devnav = document.querySelector('#devnav');
+// let nav = document.querySelector('#nav');
+//
+// devbutton.addEventListener('click', ()=>{
+//   console.log('its working');
+//   if (devnav.style.height === 0) {
+//     devnav.style.height = '50px';
+//     nav.style.marginTop = '50px';
+//     console.log('50px');
+//   }
+//   if (nav.style.marginTop === '50px') {
+//     devnav.style.height = '0';
+//     nav.style.marginTop = '0';
+//     console.log('0');
+//   }
+// });
