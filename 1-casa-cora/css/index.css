@@ -59,6 +59,53 @@ main {
   margin: 75px auto;
 }
 
+.text {
+  width: 60%;
+  margin: 0 0 150px 150px;
+  display: inline-block;
+}
+
+.text h3, span {
+  text-align: left;
+  font-size: 20pt;
+  margin-bottom: 70px;
+}
+
+.text span {
+  font-size: 50pt;
+  margin-left: 15px;
+}
+
+.text p {
+  text-align: left;
+  font-size: 12pt;
+  border-top: 2px solid pink;
+  border-bottom: 2px solid pink;
+  padding: 30px 30px;
+}
+
+.photos {
+  height: 500px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
+  margin-bottom: 400px;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto 60px auto;
+}
+
+.photo img {
+  margin: 0 auto;
+}
+
 .orangebg {
   background: rgba(245, 106, 28, 0.7);
   margin: 0 auto !important;
@@ -78,7 +125,7 @@ main {
 }
 
 .bg-img {
-  top:0px;
+  top: 0px;
   width: 100vw;
   height: 100vh;
   position: static;
@@ -110,7 +157,6 @@ button {
   margin: 40px auto;
   border-radius: 20px;
 }
-
 
 /* .devnav {
   disp#lay: flex;
