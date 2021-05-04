@@ -13,28 +13,23 @@
 body {
   background-color: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,0.7) 0%, rgba(148,187,233,0.7) 100%);
-  display: flex;
   width: 100vw;
   font-family: Calamity;
   overflow-x: hidden;
 }
 
 main {
-  transition: 1000ms;
   display: flex;
-  padding: 100px 200px 0px 300px;
-  text-align: left;
+  width: 100vw;
+  flex-direction: column;
+  margin: 0 auto;
+  transition: 1000ms;
 }
-section {
 
-}
 footer {
-
+  margin: 0 auto;
+  width: 70vw;
 }
-
-/*
-                  Images, Videos and Links
-*/
 
 a {
   text-decoration: none;
@@ -45,10 +40,7 @@ a:hover {
   background-color: black;
 }
 
-/*
-                  Navigation Bars and
-                  Main Content Interaction
-*/
+
 
 .visible-left-nav-in-main {
   margin-left: 175px;
@@ -58,31 +50,28 @@ a:hover {
   margin-right: 300px;
 }
 
-/*
-                  Page Title
-*/
-
-.page-title {
-    padding: 50px 0px 100px 0px;
-    position: relative;
+.header-box {
+    margin: 50px 100px 50px 220px;
     line-height: 2;
 }
 
-.page-title a, .list a{
-  color: white;
+.header-box a {
+  color: black;
 }
 
-.description {
-    background-color: rgba(168, 255, 150, 0.67);
-}
-
-.description a:hover {
+.header-box a:hover {
   transition: 0.6s;
 }
 
-/*
-                  Project List
-*/
+.subheader-box {
+    background-color: rgba(168, 255, 150, 0.67);
+    width: 250px;
+    padding: 10px;
+}
+
+.subheader-box a:hover {
+    color: white;
+}
 
 .project1 { grid-area: p1;}
 .project2 { grid-area: p2;}
@@ -95,11 +84,11 @@ a:hover {
 .project9 { grid-area: p9;}
 .projectX { grid-area: pX;}
 
-/* now */
 .list, .list a {
+  color: white;
   margin-bottom: 30px;
   padding: 15px;
-  font-size: 19pt;
+  font-size: 16spt;
 }
 
 .list a:hover {
@@ -136,9 +125,6 @@ a:hover {
   }
 }
 
-/*
-                Navigation Bars and Buttons
-*/
 
 #left-nav {
   display: flex;
@@ -177,6 +163,8 @@ a:hover {
   width: 300px;
 }
 
+
+
 .navbutton {
   font-size: 12pt;
   line-height: 1.3;
@@ -200,12 +188,12 @@ a:hover {
   padding: 5px;
   margin-left: 50px;
 }
-/*
-                  ID Selectors
-*/
 
 #title {
-  font-size: 60pt;
+  font-size: 55pt;
+  letter-spacing: 10pt;
+  line-height: 1.5;
+  margin: 20px auto;
 }
 #sub-title {
   font-size: 20pt;

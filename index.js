@@ -13,9 +13,12 @@
 //   main.classList.toggle('visible-right-nav-in-main');
 //   rightNav.classList.toggle('visible-right-nav');
 // });
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 function leftNav(option) {
-  let leftNavWidth = document.getElementsByClassName('left-nav').style.width;
+  let leftNavWidth = document.getElementById('left-nav').style.width;
   let mainLeftMargin = document.getElementsByName('main').style.marginLeft;
   if (option === 1) {
     leftNavWidth = '0px';
@@ -31,7 +34,7 @@ function leftNav(option) {
 }
 
 function rightNav(option) {
-  let rightNavWidth = document.getElementsByClassName('right-nav').style.width;
+  let rightNavWidth = document.getElementById('right-nav').style.width;
   let mainRightMargin = document.getElementsByName('main').style.marginRight;
   if (option === 1) {
     rightNavWidth = '0px';
