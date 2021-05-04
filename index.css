@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Calamity';
-  src: url('./1/Calamity-Regular.otf') format('otf');
+  src: url('./resources/Calamity-Regular.otf');
 }
 
 * {
@@ -10,13 +10,9 @@
   border: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: radial-gradient(circle, rgba(238,174,202,0.7) 0%, rgba(148,187,233,0.7) 100%);
   display: flex;
   width: 100vw;
   font-family: Calamity;
@@ -144,7 +140,7 @@ a:hover {
                 Navigation Bars and Buttons
 */
 
-.left-nav {
+#left-nav {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
@@ -160,11 +156,11 @@ a:hover {
   overflow-y: hidden;
 }
 
-.visible-left-nav {
+#visible-left-nav {
   width: 175px;
 }
 
-.right-nav {
+#right-nav {
   padding-top: 60px;
   background-color: #111;
   z-index: 3;
@@ -177,7 +173,7 @@ a:hover {
   overflow-x: hidden;
 }
 
-.visible-right-nav {
+#visible-right-nav {
   width: 300px;
 }
 

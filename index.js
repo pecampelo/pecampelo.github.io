@@ -48,19 +48,19 @@ function rightNav(option) {
 
 
 function openNavOne() {
-  document.getElementsByClassName('left-nav').style.width = '175px';
+  document.getElementById('left-nav').style.width = '175px';
   document.getElementsByName('main').style.marginLeft = "175px";
 }
 function closeNavOne() {
-  document.getElementsByClassName('left-nav').style.width = '0px';
+  document.getElementById('left-nav').style.width = '0px';
   document.getElementsByName('main').style.marginLeft = "0px";
 }
 function openNavTwo() {
-  document.getElementsByClassName('right-nav').style.width = '300px';
+  document.getElementById('right-nav').style.width = '300px';
   document.getElementsByName('main').style.marginRight = "300px";
 }
 
 function closeNavTwo() {
-  document.getElementsByClassName('right-nav').style.width = '0px';
-  document.getElementsByTagName('main').style.marginRight = "0px";
+  document.getElementById('right-nav').style.width = '0px';
+  document.getElementsByName('main').style.marginRight = "0px";
 }
