@@ -22,13 +22,19 @@ main {
   display: flex;
   width: 100vw;
   flex-direction: column;
-  margin: 0 auto;
   transition: 1000ms;
 }
 
 footer {
-  margin: 0 auto;
-  width: 70vw;
+  margin: 70px auto;
+  max-width: 30%;
+  min-width: 50px;
+  font-size: 10pt;
+  text-align: center;
+}
+
+footer h3 {
+    margin: 0 auto;
 }
 
 a {
@@ -51,8 +57,8 @@ a:hover {
 }
 
 .header-box {
-    margin: 50px 100px 50px 220px;
-    line-height: 2;
+  margin: 50px auto;
+  line-height: 2;
 }
 
 .header-box a {
@@ -67,6 +73,8 @@ a:hover {
     background-color: rgba(168, 255, 150, 0.67);
     width: 250px;
     padding: 10px;
+    margin: 0 auto 80px auto;
+    font-size: 10pt;
 }
 
 .subheader-box a:hover {
@@ -76,19 +84,12 @@ a:hover {
 .project1 { grid-area: p1;}
 .project2 { grid-area: p2;}
 .project3 { grid-area: p3;}
-.project4 { grid-area: p4;}
-.project5 { grid-area: p5;}
-.project6 { grid-area: p6;}
-.project7 { grid-area: p7;}
-.project8 { grid-area: p8;}
-.project9 { grid-area: p9;}
-.projectX { grid-area: pX;}
 
 .list, .list a {
   color: white;
   margin-bottom: 30px;
   padding: 15px;
-  font-size: 16spt;
+  font-size: 14pt;
 }
 
 .list a:hover {
@@ -99,9 +100,9 @@ a:hover {
 
 @media only screen and (orientation: landscape) {
   .project-list {
-      margin: 50px 200px;
+      margin: 100px auto;
       grid-template-columns: repeat(9, 100px);
-      grid-template-rows: repeat(10, 80px) 120px;
+      grid-template-rows: repeat(3, 80px) 120px;
       display: grid;
       align-items: center;
       grid-template-areas:
@@ -122,6 +123,7 @@ a:hover {
   .project-list {
     display: flex;
     flex-direction: column;
+    transition: 1s;
   }
 }
 
@@ -191,11 +193,9 @@ a:hover {
 
 #title {
   font-size: 55pt;
-  letter-spacing: 10pt;
-  line-height: 1.5;
-  margin: 20px auto;
-}
-#sub-title {
-  font-size: 20pt;
-  position: relative;
+  letter-spacing: 12pt;
+  line-height: 1.7;
+  margin: 30px auto;
+  padding: 15px;
+  word-break: break-all;
 }
