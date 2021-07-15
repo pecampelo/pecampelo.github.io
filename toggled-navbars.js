@@ -13,9 +13,6 @@
 //   main.classList.toggle('visible-right-nav-in-main');
 //   rightNav.classList.toggle('visible-right-nav');
 // });
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
 
 function leftNav(option) {
   let leftNavWidth = document.getElementById('left-nav').style.width;
